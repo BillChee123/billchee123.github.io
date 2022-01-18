@@ -1,0 +1,361 @@
+/*
+Animation: https://www.sliderrevolution.com/resources/css-border-animation/
+*/
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    background-color: var(--primary-color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items li {
+    padding: 1rem 1.5rem;
+}
+
+.nav-items.options li:hover {
+    background: #306779;
+}
+
+.nav-items li:not(:last-of-type) {
+    border-right: 1px solid var(--secondary-color-1);
+}
+
+.secondary-color-1 {
+    color: var(--secondary-color-1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+.page-header-row {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    color: var(--primary-color-1);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--secondary-color-2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+}
+
+.about-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,1);
+    align-items: center;
+    background-image: url('img/love-live.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    opacity: 0.5;
+}
+
+/*
+https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element
+*/
+#about-me-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    min-height: 3rem;
+    min-width: 10rem;
+    background-color: var(--primary-color-2);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-button:hover {
+    opacity: 0.8;
+}
+
+#avatar {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about-me-container {
+    min-height: 60vh;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#about-me-description {
+    background: var(--primary-color-2);
+    color: var(--secondary-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px var(--primary-color-1);
+    min-height: 10rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+#skills-container {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+
+.skills-card {
+    font-size: 1.5rem;
+    max-width: 18rem;
+    border-radius: 10px;
+    background: var(--primary-color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-card-header {
+    color: var(--secondary-color-1);
+    font-family: Quicksand;
+    border-bottom: 1px solid var(--secondary-color-1);
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-card-img {
+    padding: 1rem;
+    max-width: 10rem;
+    object-fit: fill;
+}
+
+.projects-selection-row {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0rem;
+    column-gap: 3rem;
+}
+
+.project-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color-2);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.project-selection:hover {
+    background: var(--primary-color-2);
+    color: var(--secondary-color-1);
+}
+
+#projects-container {
+    min-height: 50vh;
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-card {
+    font-size: 1.5rem;
+    min-width: 15rem;
+    min-height: 18rem;
+    border: 3px solid;
+    border-radius: 10px;
+    background: var(--primary-color-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.projects-card:hover:before {
+}
+
+.projects-card:hover:after {
+}
+
+/*.projects-card:hover {*/
+/*    border: 3px dashed var(--secondary-color-1);*/
+/*}*/
+
+.projects-card-header {
+    color: var(--secondary-color-1);
+    font-family: Quicksand;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projects-card-img {
+    padding: 1rem;
+    border-radius: 50%;
+    max-width: 8rem;
+    object-fit: fill;
+}
+
+#contact-me-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem;
+    min-height: 60vh;
+}
+
+#contact-me-form {
+    background: var(--primary-color-2);
+    color: var(--secondary-color-1);
+    min-width: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.label-row {
+    padding: 1rem 1rem 0rem 1rem;
+    font-weight: 550;
+}
+
+.input-row {
+    display: flex;
+    padding: 1rem;
+}
+
+.contact-form-input {
+    flex: 1;
+    padding: 5px;
+    background: transparent;
+    font-size: 18px;
+}
+
+.contact-form-input:focus {
+    color: var(--highlighted-color);
+    outline: none;
+}
+
+.contact-form-input::placeholder {
+    color: var(--secondary-color-1);
+}
+
+.contact-form-input:focus::placeholder {
+    color: transparent;
+}
+
+.contact-form-line-input {
+    border-style: hidden hidden solid hidden;
+    color: var(--secondary-color-1);
+    border-bottom: 1px solid var(--secondary-color-1);
+}
+
+.contact-form-line-input:focus {
+    border-bottom: 1px solid var(--highlighted-color);
+}
+
+.contact-form-box-input {
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color-1);
+}
+
+.contact-form-box-input:focus {
+    border: 1px solid var(--highlighted-color);
+}
+
+.submit-button-row {
+    font-size: 18px;
+    padding: 1rem;
+    display: flex;
+}
+
+.contact-form-submit-button {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    min-height: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--secondary-color-1);
+    border: 1px solid var(--secondary-color-1);
+}
+
+.contact-form-submit-button:hover {
+    color: var(--highlighted-color);
+    border: 1px solid var(--highlighted-color);
+    cursor: pointer;
+}
+
+@media  (max-width: 720px) {
+    #about-me-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@font-face {
+    font-family: Rufina; src: url('font/rufina/Rufina-Regular.ttf');
+}
+
+@font-face {
+    font-family: Quicksand; src: url('font/Quicksand/Quicksand.ttf');
+}
+
+:root {
+    --primary-color-1: #141850;
+    --primary-color-2: #303179;
+    --secondary-color-1: #f9fadf;
+    --secondary-color-2: #dff2fa;
+    --secondary-color-3: #ffffff;
+    --unhighlighted-text-color: #616161;
+    --highlighted-color: #ED7966;
+    --primary-font: Rufina;
+    --secondary-font: Quicksand;
+}
