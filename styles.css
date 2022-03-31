@@ -156,7 +156,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     display: flex;
     box-shadow: 5px 10px ;
     min-height: 10rem;
-    width: 80rem;
+    max-width: 80rem;
     padding: 1rem;
     font-size: 1.3rem;
     overflow: auto;
@@ -181,7 +181,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     gap: 2rem;
     display: flex;
     justify-content: center;
-    padding: 1rem 20rem;
+    padding: 1rem 10rem;
     flex-wrap: wrap;
     min-height: 50vh;
 }
@@ -260,7 +260,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     display: flex;
     box-shadow: 5px 10px ;
     min-height: 10rem;
-    width: 80rem;
+    max-width: 80rem;
     padding: 1rem;
     font-size: 1.3rem;
     overflow: auto;
@@ -382,6 +382,30 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     #about-me-container {
         display: flex;
         flex-direction: column;
+    }
+
+    #skills-container {
+        padding: 1rem 0rem;
+    }
+
+    .experience-box {
+        flex-direction: column;
+    }
+
+    .experience-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-box {
+        flex-direction: column;
+    }
+
+    .project-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
