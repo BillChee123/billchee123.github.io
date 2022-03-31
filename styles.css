@@ -9,6 +9,9 @@ Card flip: https://www.w3schools.com/howto/howto_css_flip_card.asp
     padding: 0;
 }
 
+#secondary-nav-dropdown {
+    display: none;
+}
 .navbar {
     z-index: 1;
     position: sticky;
@@ -291,14 +294,15 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 #contact-me-container {
     display: flex;
     justify-content: center;
-    padding: 3rem 0rem;
+    align-items: center;
+    padding: 3rem 2rem;
     min-height: 60vh;
 }
 
 #contact-me-form {
     background: var(--primary-color-2);
     color: var(--secondary-color-1);
-    min-width: 600px;
+    width: 40em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -406,6 +410,14 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #nav-dropdown {
+        display: none;
+    }
+
+    #secondary-nav-dropdown {
+        display: block;
     }
 }
 
