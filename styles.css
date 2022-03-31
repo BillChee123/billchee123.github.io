@@ -382,14 +382,14 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     cursor: pointer;
 }
 
-@media  (max-width: 720px) {
+@media  (max-width: 820px) {
     #about-me-container {
         display: flex;
         flex-direction: column;
     }
 
     #skills-container {
-        padding: 1rem 0rem;
+        padding: 1rem 1rem;
     }
 
     .experience-box {
