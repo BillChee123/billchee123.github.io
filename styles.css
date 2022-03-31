@@ -136,11 +136,55 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     border-radius: 20px;
 }
 
+#experience-container {
+    background: #ADD8E6;
+    min-height: 60vh;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.experience-box-img {
+    max-width: 10rem;
+    max-height: 10rem;
+    padding: 1em;
+    object-fit: cover;
+}
+
+.experience-box {
+    /*background: #ADD8E6;*/
+    background: var(--secondary-color-2);
+    display: flex;
+    box-shadow: 5px 10px ;
+    min-height: 10rem;
+    width: 80rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    overflow: auto;
+    border-radius: 20px;
+}
+.experience-img {
+    align-items: center;
+    display: flex;
+}
+
+.experience-detail {
+    flex-direction: column;
+    padding: 0em 1em;
+}
+
+.experience-description {
+    padding: 1em 0em;
+}
+
 #skills-container {
     gap: 2rem;
     display: flex;
     justify-content: center;
-    padding: 1rem 1rem;
+    padding: 1rem 20rem;
     flex-wrap: wrap;
     min-height: 50vh;
 }
@@ -159,7 +203,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     color: var(--secondary-color-1);
     font-family: Quicksand;
     border-bottom: 1px solid var(--secondary-color-1);
-    padding: 1rem 0rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
