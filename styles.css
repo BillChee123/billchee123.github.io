@@ -43,11 +43,11 @@ Card flip: https://www.w3schools.com/howto/howto_css_flip_card.asp
     color: var(--secondary-color-1);
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+nav li {
     cursor: pointer;
 }
 
