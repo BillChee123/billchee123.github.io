@@ -1,4 +1,3 @@
-
 const aboutMeAnchor = document.getElementById('about-me-anchor');
 const experiencesAnchor = document.getElementById('experiences-anchor');
 const skillsAnchor = document.getElementById('skills-anchor');
@@ -14,27 +13,27 @@ const contactNavSelector = document.getElementById('contact-nav-item');
 const aboutMeButton = document.getElementById('about-me-button');
 
 aboutMeButton.addEventListener('click', arg => {
-    aboutMeAnchor.scrollIntoView({ behavior: "smooth", block: 'start' });
+    aboutMeAnchor.scrollIntoView({behavior: "smooth", block: 'start'});
 });
 
 aboutNavSelector.addEventListener('click', arg => {
-    aboutMeAnchor.scrollIntoView({ behavior: "smooth" });
+    aboutMeAnchor.scrollIntoView({behavior: "smooth"});
 });
 
 experiencesNavSelector.addEventListener('click', arg => {
-    experiencesAnchor.scrollIntoView({ behavior: "smooth" });
+    experiencesAnchor.scrollIntoView({behavior: "smooth"});
 });
 
 skillsNavSelector.addEventListener('click', arg => {
-    skillsAnchor.scrollIntoView({ behavior: "smooth" });
+    skillsAnchor.scrollIntoView({behavior: "smooth"});
 });
 
 projectsNavSelector.addEventListener('click', arg => {
-    projectsAnchor.scrollIntoView({ behavior: "smooth" });
+    projectsAnchor.scrollIntoView({behavior: "smooth"});
 });
 
 contactNavSelector.addEventListener('click', arg => {
-    contactsAnchor.scrollIntoView({ behavior: "smooth" });
+    contactsAnchor.scrollIntoView({behavior: "smooth"});
 });
 
 const contactMeForm = document.getElementById('contact-me-form');
