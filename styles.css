@@ -18,7 +18,7 @@ Card flip: https://www.w3schools.com/howto/howto_css_flip_card.asp
     top: 0;
     left: 0;
     font-family: var(--primary-font);
-    font-size: 24px;
+    font-size: 1.2em;
     background-color: var(--primary-color-1);
     display: flex;
     justify-content: space-between;
@@ -136,48 +136,59 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     border-radius: 20px;
 }
 
-#experience-container {
+.custom-container {
     background: #ADD8E6;
     min-height: 60vh;
-    gap: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    padding: 0 2rem 2rem 2rem;
 }
 
-.experience-box-img {
+.entry-box-img {
     max-width: 10rem;
     max-height: 10rem;
     padding: 1em;
     object-fit: cover;
 }
 
-.experience-box {
+.entry-box {
     background: var(--secondary-color-2);
+    margin-top: 2rem;
     display: flex;
     box-shadow: 5px 10px ;
     min-height: 10rem;
-    max-width: 80rem;
     padding: 1rem;
     font-size: 1.3rem;
     overflow: auto;
     border-radius: 20px;
 }
 
-.experience-img {
+.entry-img {
     align-items: center;
     display: flex;
 }
 
-.experience-detail {
+.entry-detail {
     flex-direction: column;
     padding: 0em 1em;
 }
 
-.experience-description {
+.default-entry-title {
+    font-weight: bold;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.entry-description {
     padding: 1em 0em;
+}
+
+.project-description-content {
+    padding: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #skills-container {
@@ -213,82 +224,6 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     padding: 1rem;
     max-width: 10rem;
     object-fit: fill;
-}
-
-.projects-selection-row {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 0rem;
-    column-gap: 3rem;
-}
-
-.project-selection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 5rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--primary-color-2);
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.project-selection:hover {
-    background: var(--primary-color-2);
-    color: var(--secondary-color-1);
-}
-
-#projects-container {
-    background: #ADD8E6;
-    min-height: 60vh;
-    gap: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-}
-
-.project-box-img {
-    max-width: 10rem;
-    max-height: 10rem;
-    padding: 1em;
-    object-fit: cover;
-}
-
-.project-box {
-    background: var(--secondary-color-2);
-    display: flex;
-    box-shadow: 5px 10px ;
-    min-height: 10rem;
-    max-width: 80rem;
-    padding: 1rem;
-    font-size: 1.3rem;
-    overflow: auto;
-    border-radius: 20px;
-}
-.project-img {
-    align-items: center;
-    display: flex;
-}
-
-.project-detail {
-    flex-direction: column;
-    padding: 0em 1em;
-}
-
-.project-title {
-    font-weight: bold;
-    font-size: 36px;
-}
-
-.project-description {
-    padding: 1em 0em;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 #contact-me-container {
@@ -392,21 +327,17 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
         padding: 1rem 1rem;
     }
 
-    .experience-box {
+    .entry-box {
         flex-direction: column;
     }
 
-    .experience-img {
+    .entry-img {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .project-box {
-        flex-direction: column;
-    }
-
-    .project-img {
+    .entry-detail {
         display: flex;
         justify-content: center;
         align-items: center;
