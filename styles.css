@@ -179,7 +179,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 .entry-title-primary {
     justify-content: center;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .default-entry-title {
