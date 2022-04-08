@@ -147,10 +147,16 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 }
 
 .entry-box-img {
+    max-width: 10em;
+    max-height: 1em;
+    margin: 3px 10px;
+    object-fit: cover;
+}
+
+.project-box-img {
     max-width: 10rem;
     max-height: 10rem;
     padding: 1em;
-    object-fit: cover;
 }
 
 .entry-box {
@@ -158,7 +164,6 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     margin-top: 2rem;
     display: flex;
     box-shadow: 5px 10px;
-    min-height: 10rem;
     width: 80%;
     padding: 1rem;
     font-size: 1.3em;
@@ -166,14 +171,15 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     border-radius: 20px;
 }
 
-.entry-img {
-    align-items: center;
+.entry-detail {
     display: flex;
+    flex-direction: column;
+    padding: 0em 2em;
 }
 
-.entry-detail {
-    flex-direction: column;
-    padding: 0em 1em;
+.entry-header {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .entry-title-primary {
@@ -191,8 +197,17 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     font-size: 32px;
 }
 
+.project-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .entry-description {
     padding: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .project-description-content {
@@ -342,11 +357,6 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
         flex-direction: column;
     }
 
-    .entry-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .entry-detail {
         display: flex;
