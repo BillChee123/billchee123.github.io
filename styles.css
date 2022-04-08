@@ -238,7 +238,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 }
 
 #skills-container {
-    column-gap: 2rem;
+    gap: 2rem;
     display: flex;
     justify-content: center;
     padding: 1rem 10rem;
