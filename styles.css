@@ -159,7 +159,28 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     padding: 1em;
 }
 
-.entry-box {
+.internships-box {
+    background: var(--secondary-color-2);
+    margin-top: 2rem;
+    box-shadow: 5px 5px;
+    width: 80%;
+    padding: 1em;
+    font-size: 1.3em;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+.internship-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+}
+
+.internship-detail:not(:last-of-type) {
+    border-bottom: 5px double;
+}
+
+.projects-box {
     background: var(--secondary-color-2);
     margin-top: 2rem;
     display: flex;
@@ -171,15 +192,14 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     border-radius: 20px;
 }
 
-.entry-detail {
+.project-detail {
     display: flex;
     flex-direction: column;
     padding: 0em 2em;
 }
 
-.entry-header {
-    display: flex;
-    flex-wrap: wrap;
+.entry-header > div {
+    display: inline;
 }
 
 .entry-title-primary {
@@ -207,7 +227,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
     padding: 1em 0em;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1em;
 }
 
 .project-description-content {
@@ -353,12 +373,12 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
         padding: 1rem 1rem;
     }
 
-    .entry-box {
+    .projects-box {
         flex-direction: column;
     }
 
 
-    .entry-detail {
+    .project-detail {
         display: flex;
         justify-content: center;
         align-items: center;
