@@ -149,7 +149,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 .entry-box-img {
     max-width: 10em;
     max-height: 1em;
-    margin: 3px 10px;
+    margin: 0px 5px;
     object-fit: cover;
 }
 
