@@ -333,6 +333,7 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 
 .contact-form-box-input {
     border-radius: 10px;
+    color: var(--secondary-color-1);
     border: 1px solid var(--secondary-color-1);
 }
 
