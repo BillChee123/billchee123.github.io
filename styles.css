@@ -110,8 +110,9 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 
 #avatar {
     height: 300px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 #about-me-container {
