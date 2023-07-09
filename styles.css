@@ -369,7 +369,6 @@ https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-el
 @media (max-width: 820px) {
     #about-me-container {
         display: flex;
-        flex-direction: column;
     }
 
     #skills-container {

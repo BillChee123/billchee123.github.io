@@ -43,6 +43,6 @@ contactMeForm.addEventListener('submit', event => {
     const subject = document.getElementById("subject").value;
     const subjectContent = `${name}: ${subject}`
     const emailContent = document.getElementById("message").value;
-    window.open(`mailto:billchee@comp.nus.edu.sg?subject=${subjectContent}&body=${emailContent}`)
+    window.open(`mailto:billchee@u.nus.edu?subject=${subjectContent}&body=${emailContent}`)
     event.preventDefault();
 });
