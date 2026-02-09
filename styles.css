@@ -82,8 +82,8 @@ body {
     justify-content: center;
     align-items: center;
     background-size: cover;
-    background: rgba(0, 0, 0, 1) url('img/background.jpg') no-repeat 50%;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 1) url('img/background.jpeg') no-repeat 60% 60%;
+    opacity: 0.8;
 }
 
 /*
